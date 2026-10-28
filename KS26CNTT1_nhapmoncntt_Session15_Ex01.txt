@@ -1,0 +1,14 @@
+Bài 1: Loại bỏ rủi ro lưu trữ cục bộ trong dự án nhóm
+Phần 1: Phân tích
+Nam lưu code trên máy cá nhân và gửi file qua Zalo nên có thể gặp một số vấn đề:
+- Mất dữ liệu: Nam xóa nhầm code rồi nhấn Ctrl+S, khiến nội dung cũ bị ghi đè
+- Nhầm phiên bản: Có nhiều file như main_v1.py, main_v2_final.py nên dễ dùng nhầm bản cũ hoặc bản chưa hoàn thiện
+- Mất file khi máy gặp sự cố: Nếu máy tính hỏng hoặc bị mất, code có thể không còn vì chưa có bản sao lưu.
+- Khó làm việc nhóm: Các thành viên gửi file qua lại nên khó biết đâu là bản mới nhất
+Phần 2: Cách khắc phục
+Nam có thể kết hợp lưu file trên máy tính và Cloud Drive theo cách sau:
+- Tạo thư mục dự án SmartFood trên Google Drive hoặc OneDrive, sau đó đưa các file code vào đó
+- Cài ứng dụng Google Drive for desktop hoặc OneDrive để đồng bộ thư mục với máy tính. Nam vẫn viết code và nhấn Ctrl+S như bình thường, file sẽ được đồng bộ lên Cloud khi có mạng
+- Khi bị xóa nhầm code, Nam mở file trên Cloud Drive, chọn Version History (Lịch sử phiên bản), tìm phiên bản trước khi xảy ra lỗi rồi chọn khôi phục
+- Chia sẻ thư mục cho các thành viên trong nhóm và phân quyền phù hợp để mọi người cùng làm việc trên một nơi, hạn chế gửi nhiều file qua Zalo.
+- Với dự án code, Nam nên dùng thêm Git để lưu lịch sử thay đổi và dễ quay lại phiên bản cũ khi cần
